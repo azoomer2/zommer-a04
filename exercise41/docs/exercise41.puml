@@ -3,21 +3,17 @@
 class Solution41{
 
 
-    sortNames(ArrayList names)
-    printNames(ArrayList names)
+    +ArrayList sortNames(ArrayList names)
+    -void printNames(ArrayList names)
 
-
+    -ArrayList readInput()
 
 
 
 }
 
-class readInput{
 
-    main()
-}
 
-Solution41 -- readInput
 
 
 @enduml
