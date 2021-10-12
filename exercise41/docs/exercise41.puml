@@ -1,0 +1,23 @@
+@startuml
+
+class Solution41{
+
+
+    sortNames(ArrayList names)
+    printNames(ArrayList names)
+
+
+
+
+
+}
+
+class readInput{
+
+    main()
+}
+
+Solution41 -- readInput
+
+
+@enduml
