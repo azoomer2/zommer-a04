@@ -8,17 +8,17 @@ import java.util.Scanner;
 
 public class Solution42 {
 
-    private List<String> fName = new ArrayList<>();
-    private List<String> lName = new ArrayList<>();
-    private List<String> salary = new ArrayList<>();
+    private final List<String> fName = new ArrayList<>();
+    private final List<String> lName = new ArrayList<>();
+    private final List<String> salary = new ArrayList<>();
 
     public void csvScanner(String filePath) throws FileNotFoundException {
         //Create new Scanner instance
-        Scanner scan = new Scanner(new File(filePath));
 
-        try (scan) {
+
+        try (Scanner scan = new Scanner(new File(filePath)); scan) {
             //set delimiter to ,
-            scan.useDelimiter(",");
+            scan.useDelimiter(",|\\r");
 
 
             //while loop for scanner having values
@@ -27,6 +27,7 @@ public class Solution42 {
                 lName.add(scan.next());
                 fName.add(scan.next());
                 salary.add(scan.next());
+
             }
         }
     }

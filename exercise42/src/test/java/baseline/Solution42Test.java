@@ -13,7 +13,7 @@ class Solution42Test {
 
         Solution42 testClass = new Solution42();
 
-        testClass.csvScanner("data/exercise42_testinput.txt");
+        testClass.csvScanner("data/exercise42_input.txt");
 
         String expectedL = "Ling";
         String expectedF = "Mai";
