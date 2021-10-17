@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Solution45{
+
+
+}
+class readFile{
+    ArrayList list;
+
+    -void readFile()
+    +List getList();
+
+}
+
+class writeFile{
+
+    -writeFile()
+
+}
+
+Solution45 --> readFile
+Solution45 --> writeFile
+@enduml

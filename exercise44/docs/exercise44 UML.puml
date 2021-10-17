@@ -1,0 +1,11 @@
+@startuml
+
+class Solution44()
+{
+    +parseJson()
+    -String takeSearchInput()
+    -searchInv(String search)
+}
+
+
+@enduml
