@@ -3,10 +3,10 @@
 class Solution41{
 
 
-    +ArrayList sortNames(ArrayList names)
+    +ArrayList nameSorter(ArrayList names)
     -void printNames(ArrayList names)
 
-    -ArrayList readInput()
+    -ArrayList takeInput()
 
 
 
