@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Solution43{
+    +createWebsite()
+
+}
+class IO{
+    -takeInputs()
+    -printOutput()
+
+}
+
+Solution43 --> IO
+@enduml

@@ -2,6 +2,10 @@
 'https://plantuml.com/sequence-diagram
 
 class Solution42{
+    String List fName;
+    String List lName;
+    String List salary;
+
 
     -csvScanner()
     +tablePrinter()
