@@ -1,0 +1,16 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Solution46{
+
+    -makePlot(List searchTerms, int count)
+
+
+}
+class fileReader
+{
+    +countEntries(String searchTerm, List list)
+
+}
+Solution46 --> fileReader
+@enduml
