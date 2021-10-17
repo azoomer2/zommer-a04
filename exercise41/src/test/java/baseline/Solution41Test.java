@@ -13,6 +13,8 @@ class Solution41Test {
 
     void nameSorter() {
 
+        Solution41 testClass = new Solution41();
+
         ArrayList<String> names = new ArrayList<>();
         ArrayList<String> test = new ArrayList<>();
 
@@ -33,7 +35,7 @@ class Solution41Test {
 
 
 
-        assertEquals(expected, Solution41.nameSorter(test));
+        assertEquals(expected, testClass.nameSorter(test));
 
 
 

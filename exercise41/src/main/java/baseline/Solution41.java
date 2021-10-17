@@ -17,7 +17,7 @@ import java.util.Scanner;
 public class Solution41 {
 
 
-    private static ArrayList<String> takeInput() throws FileNotFoundException {
+    private ArrayList<String> takeInput() throws FileNotFoundException {
         //read from input file using scanner
         Scanner inputFile = new Scanner(new File("data/exercise41_input.txt"));
 
@@ -33,7 +33,7 @@ public class Solution41 {
         return names;
     }
 
-    public static List<String> nameSorter(List<String> names)
+    public List<String> nameSorter(List<String> names)
     {
         //Take input arraylist
         //Sort using collections.sort
@@ -42,7 +42,7 @@ public class Solution41 {
         return names;
     }
 
-    private static void printNames(ArrayList<String> names) throws IOException {
+    private void printNames(ArrayList<String> names) throws IOException {
         //print out the supplied array list
         FileWriter output = new FileWriter("data/exercise_output.txt");
         output.write("Total of " + names.size()+" names\n");
@@ -57,16 +57,16 @@ public class Solution41 {
 
     public static void main(String[] args) throws IOException {
 
+        Solution41 main = new Solution41();
 
-
-        ArrayList<String> namesIn = new ArrayList<>();
+        ArrayList<String> namesIn;
         ArrayList<String> sortedNames;
         //take input from readInput class
-        namesIn = takeInput();
+        namesIn = main.takeInput();
         //nameSorter(array)
-        sortedNames = (ArrayList<String>) nameSorter(namesIn);
+        sortedNames = (ArrayList<String>) main.nameSorter(namesIn);
         //printNames(array)
-        printNames(sortedNames);
+        main.printNames(sortedNames);
     }
 
 }
