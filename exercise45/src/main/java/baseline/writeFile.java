@@ -1,15 +1,29 @@
 package baseline;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.List;
+
 public class writeFile {
 
-    public void writeFile()
-    {
+    public void writeToFile(String output, List<String> list) throws IOException {
         //new file writer
-        //prompt user for file name
-        //give writer file location and name
+        try (FileWriter writer = new FileWriter("data\\" + output)) {
+            //give writer file location and name
 
-        //loop through list
-        //replace utilize with use
+
+            //loop through list
+            for (String o : list) {
+                String temp = o;
+
+                //replace utilize with use
+                temp = temp.replace("utilize", "use");
+
+                writer.write(temp + "\n");
+
+            }
+        }
+
     }
 
 }
