@@ -10,7 +10,8 @@ class Solution46{
 class fileReader
 {
     +countEntries(String searchTerm, List list)
-
+    -readFile()
+    +getList()
 }
 Solution46 --> fileReader
 @enduml
